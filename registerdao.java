@@ -20,7 +20,7 @@ public class registerdao {
 			st.setString(1, email);
 			st.setString(2, pass);
 			ResultSet rs = st.executeQuery();
-				
+			response.sendRedirect("login.jsp");	
 		} catch (Exception e) {
 			
 			e.printStackTrace();
